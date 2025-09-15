@@ -1,0 +1,46 @@
+@import '/src/scss/base/mixins';
+
+.container {
+    max-width: 1240px;
+    padding: 0 20px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.smaller-container {
+    max-width: 600px;
+    margin: 0 auto;
+    width: 100%;
+    margin-left: 0;
+    box-sizing: border-box;
+
+    @include between-desktop-and-tablet {
+        padding-right: 2%;
+    }
+
+    @include for-tablet {
+        max-width: 768px;
+    }
+}
+
+.smaller-container--left{
+    margin-right: 0;
+    margin-left: auto;
+
+    @include between-desktop-and-tablet {
+        padding-left: 2%;
+    }
+}
+
+.medium-container {
+    max-width: 740px;
+    padding: 0 20px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+
+    @include for-tablet {
+        max-width: 768px;
+    }
+}

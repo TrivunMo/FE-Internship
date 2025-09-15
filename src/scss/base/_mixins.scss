@@ -1,0 +1,13 @@
+@import 'variables.scss';
+
+@mixin for-tablet {
+    @media (max-width: $breakpoint-tablet) { @content; }
+  }
+  @mixin for-mobile {
+    @media (max-width: $breakpoint-mobile) { @content; }
+  }
+
+  @mixin between-desktop-and-tablet {
+    @media (max-width: 1500px) and (min-width: 769px) { @content; }
+  }
+

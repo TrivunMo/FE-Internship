@@ -1,0 +1,64 @@
+@import '/src/scss/base/variables';
+@import '/src/scss/base/mixins';
+
+
+.line {
+    width: 110px;
+    height: 10px;
+    border-radius: 30px;
+    margin-top: 0;
+    margin-bottom: 0;
+    border: none;
+}
+
+.line--charcoal {
+    background-color: $charcoal;
+}
+
+.line--blue {
+    background-color: $blue;
+    margin-left: 0;
+}
+
+.line--blue-center {
+    background-color: $blue;
+}
+
+.line--white {
+    background-color: $white;
+    margin-left: 0;
+}
+
+.line--silver {
+    background-color: $gray;
+    margin-left: 0;
+}
+
+.line-vertical {
+    width: 10px;
+    height: 60px;
+    border-radius: 30px;
+    position: absolute;
+    margin-top: 0px;
+    border: none;
+}
+
+.line-vertical--brick {
+    background-color: $brick;
+}
+
+.line-vertical--black {
+    background-color: $black;
+}
+
+.line-vertical--blue {
+    background-color: $blue;
+}
+
+.line-vertical--teal {
+    background-color: $teal;
+}
+
+.line-vertical--silver {
+    background-color: $gray;
+}

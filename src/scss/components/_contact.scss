@@ -1,0 +1,174 @@
+@import '/src/scss/base/variables';
+@import '/src/scss/base/mixins';
+@import '/src/scss/base/layout';
+@import '/src/scss/components/lines';
+
+.contact {
+    padding: 70px 0px 70px 0px;
+    background-color: $silver;
+    gap: 30px;
+
+    @include for-tablet {
+        padding: 40px 0px 40px 0px;
+    }
+}
+
+.contact__container {
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact__title {
+    font-family: $font-family;
+    font-size: 46px;
+    font-weight: $font-weight-regular;
+    line-height: 58px;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+
+    @include for-tablet {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    @include for-mobile {
+        font-size: 30px;
+        line-height: 38px;
+    }
+}
+
+.contact__form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+    width: 100%;
+    height: auto;
+
+    @include for-tablet {
+        gap: 20px;
+    }
+
+    @include for-mobile {
+        grid-template-columns: none;
+    }
+}
+
+.contact__form-group {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    gap: 5px;
+
+    @include for-tablet{
+        max-width: 100%;
+        padding: 0%;
+    }
+
+    @include for-mobile {
+        grid-column: span 1;
+        max-width: 100%; 
+    }
+}
+
+.contact__form-label {
+    font-family: $font-family;
+    font-size: 16px;
+    font-weight: $font-weight-regular;
+    line-height: 20px;
+    text-align: left;
+}
+
+.contact__form-label--left {
+    margin-right: 20px;
+
+    @include for-tablet {
+        margin-right: 0;
+    }
+}
+
+.contact__form-label--right {
+    margin-left: 20px;
+
+    @include for-tablet {
+        margin-left: 0;
+    }
+}
+
+.contact__form-input::placeholder,
+.contact__form-textarea::placeholder {
+    color: $charcoal;
+    opacity: 1; /* Firefox */
+    font-family: $font-family;
+    font-size: 16px;
+    font-weight: $font-weight-regular;
+    line-height: 20px;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+.contact__form-input::-ms-input-placeholder,
+.contact__form-textarea::-ms-input-placeholder {
+    color: $charcoal;
+    opacity: 1; /* Edge */
+    font-family: $font-family;
+    font-size: 16px;
+    font-weight: $font-weight-regular;
+    line-height: 20px;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+.contact__form-input {
+    padding: 17px 15px 16px 15px;
+    border-radius: 10px;
+    border: 1px solid $charcoal;
+}
+
+.contact__form-input--left {
+    margin-right: 20px;
+
+    @include for-tablet {
+        margin-right: 0;
+    }
+}
+
+.contact__form-input--right {
+    margin-left: 20px;
+
+    @include for-tablet {
+        margin-left: 0;
+    }
+}
+
+
+.contact__form-group--full-width {
+    grid-column: span 2;
+    max-width: 100%;
+    gap: 5px;    
+
+    @include for-tablet {
+        max-width: 100%;
+    }
+
+    @include for-mobile {
+        grid-column: span 1; 
+    }
+}
+
+.contact__form-textarea {
+    padding: 14px 14px 14px 14px;
+    border: 1px solid $charcoal;
+    border-radius: 10px;
+}
+
+.contact__description {
+    font-family: $font-family;
+    font-size: 16px;
+    font-weight: $font-weight-regular;
+    line-height: 20px;
+    text-align: left;
+    margin: 0;
+}

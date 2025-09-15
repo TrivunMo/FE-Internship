@@ -1,0 +1,66 @@
+@import '/src/scss/base/mixins';
+@import '/src/scss/base/variables';
+
+.button {
+    display: flex;             
+    align-items: center;       
+    padding: 14px 33px 14px 33px;        
+    border-radius: 10px;
+    background-color: $red;
+    border: none;
+    gap: 3px;
+    box-sizing: border-box;
+
+    font-family: $font-family;
+    font-size: 16px;
+    font-weight: $font-weight-bold;
+    line-height: 20px;
+    text-align: left;
+    color: $white;
+    align-self: center;
+
+    @include for-mobile {
+        width: 100%;
+        justify-content: center;
+    }
+}
+.button:hover {
+    background-color: transparent;
+    color: $red;
+    box-shadow: inset 0 0 0 2px $red;
+}
+
+.button--self-start {
+    align-self: self-start;
+}
+
+.button--end {
+    width: auto;
+    justify-self: end;
+
+    @include for-mobile {
+        justify-self: unset;
+    }
+}
+
+ .material-symbols-outlined {
+    font-weight: $font-weight-regular;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.button--white {
+    align-self: self-start;
+    background-color: $white;
+    color: $brick;
+
+    @include for-mobile {
+        width: fit-content;
+    }
+}
+
+.button--white:hover {
+    background-color: transparent;
+    color: $white;
+    box-shadow: inset 0 0 0 2px $white;
+}

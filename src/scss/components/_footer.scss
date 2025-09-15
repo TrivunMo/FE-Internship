@@ -1,0 +1,102 @@
+@import '/src/scss/base/variables';
+@import '/src/scss/base/mixins';
+@import '/src/scss/base/layout';
+@import '/src/scss/components/lines';
+
+.footer__container {
+    padding: 15px 0 15px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    
+    @include for-mobile {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 0;    
+    }
+}
+
+.footer__logo-img {
+    max-height: 53.95px;
+    width: 100%;
+    display: block;
+
+    @include for-mobile {
+        max-height: 47.96px;
+    }
+}
+
+.footer__content {
+    display: flex;
+
+    @include for-tablet {
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 10px;
+    }  
+}
+
+.footer__icons {
+    display: flex;
+    gap: 20px;
+
+    @include for-tablet {
+        position: absolute;
+        right: 0px;
+        bottom: 40px;
+    }
+
+    @include for-mobile {
+        gap: 30px;
+        position: relative;
+        bottom: 0;
+    }
+}
+
+.zmdi {
+    color: $blue;
+    font-weight: $font-weight-medium;
+    font-size: 22px;
+    line-height: 24px;
+}
+
+.footer__links {
+    display: flex;
+    gap: 20px;
+
+    @include for-tablet {
+        margin-top: 30px;
+    }
+
+    @include for-mobile {
+        margin-top: 0;
+    }
+}
+
+.footer__link {
+    font-family: $font-family;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17.5px;
+    text-align: right;
+    color: $charcoal;
+    text-decoration: none
+}
+
+.footer__text {
+    padding: 15px 0;
+    background-color: $brick;
+    margin: 0;
+}
+
+.footer__description {
+    font-family: $font-family;
+    font-size: 12px;
+    font-weight: $font-weight-medium;
+    line-height: 15px;
+    text-align: center;
+    color: $white;
+    margin: 0;
+}

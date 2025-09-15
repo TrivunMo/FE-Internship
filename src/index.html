@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProEnergy</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+
+    <link rel="stylesheet" href="../dist/css/style.css" > 
+</head>
+<body>
+    <!--header-->
+    <header class="header">
+        <div class="container">
+            <div class="header__container">
+            <div class="header__logo">
+                <img src="assets/svg/logo.svg" alt="logo" class="header__logo-img">
+            </div>
+            <nav class="header__navigation js-header__navigation">
+                <ul class="header__items">
+                    <li class="header__item">
+                        <a href="#" id="our-group" class="header__link js-header__link">Our Group</a>
+                    </li>
+
+                    <li class="header__item js-header_item header__item--dropdown">
+                        <a href="#" id="our-divisions" class="header__link js-header__link header__link--dropdown-click">
+                            Our Divisions<span class="material-symbols-outlined material-symbols-outlined--header">expand_more</span>
+                            <span class="material-symbols-outlined material-symbols-outlined--header icon-arrow-forward">arrow_forward_ios</span>
+                        </a>
+                        <ul class="header__dropdown-content js-dropdown-content" id="our-divisions-content">
+                        <li class="header__dropdown-content-item"><a href="#" class="header__dropdown-content-link">Our Operations Structure</a></li>
+                        <li class="header__dropdown-content-item"><a href="#" class="header__dropdown-content-link">Water Division</a></li>
+                        <li class="header__dropdown-content-item"><a href="#" class="header__dropdown-content-link">Transport Division</a></li>
+                        <li class="header__dropdown-content-item"><a href="#" class="header__dropdown-content-link">Telecom Division</a></li>
+                        <li class="header__dropdown-content-item"><a href="#" class="header__dropdown-content-link">Energy Division</a></li>
+                        <li class="header__dropdown-content-item"><a href="#" class="header__dropdown-content-link">Plant & Fleet Solutions</a></li>
+                    </ul>
+                    </li>
+
+                    <li class="header__item">
+                        <a href="#" id="our-people" class="header__link js-header__link">Our People</a>
+                    </li>
+
+                    <li class="header__item js-header_item header__item--dropdown">
+                        <a href="#" id="investors" class="header__link js-header__link header__link--dropdown-click">
+                            Investors<span class="material-symbols-outlined material-symbols-outlined--header">expand_more</span>
+                            <span class="material-symbols-outlined material-symbols-outlined--header icon-arrow-forward">arrow_forward_ios</span>
+                        </a>
+                        <ul class="header__dropdown-content js-dropdown-content" id="investors-content">
+                        <li class="header__dropdown-content-item"><a href="#" class="header__dropdown-content-link">Our Investment Strategy</a></li>
+                        <li class="header__dropdown-content-item"><a href="#" class="header__dropdown-content-link">IR Contracts</a></li>
+                        <li class="header__dropdown-content-item"><a href="#" class="header__dropdown-content-link">Tax Strategy</a></li>
+                        <li class="header__dropdown-content-item"><a href="#" class="header__dropdown-content-link">Sector Analysis</a></li>
+                        <li class="header__dropdown-content-item"><a href="#" class="header__dropdown-content-link">Annual Reports</a></li>
+                    </ul>
+                    </li>
+
+                    <li class="header__item">
+                        <a href="#" id="our-news" class="header__link js-header__link">Our News</a>
+                    </li>
+
+                    <li class="header__item">
+                        <a href="#" id="contact-us" class="header__link js-header__link">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="header__responsive-menu">
+                <button class="header__menu js-header__menu" id="menu-button"> <span class="material-symbols-outlined material-symbols-outlined--menu">menu</span></button>
+        </div>
+        </div>
+        </div>
+    </header>
+
+    <main>
+        <!--about us section -->
+        <section class="about-us">
+            <div class="about-us__content">
+                <div class="about-us__image">
+                    <img class="about-us__image-img" src="assets/images/workerImg.jpg" alt="worker image">
+                </div>
+                <div class="smaller-container">
+                        <div class="about-us__text">
+                        <hr class="line line--blue">
+                        <h1 class="about-us__title">Delivering essential infrastructure services</h1>
+                        <p class="about-us__description">We deliver a range of essential infrastructure services within  water, energy, transport and telecommunication in the Europe.</p>
+                        <button class="button button--self-start">Find out more<span class="material-symbols-outlined">arrow_forward</span></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--divisions section-->
+        <section class="divisions">
+                <div class="divisions__split">
+                    <div class="smaller-container smaller-container--left">
+                <div class="divisions__discover">
+                    <hr class="line line--white">
+                    <h2 class="divisions__title">What we do</h2>
+                    <p class="divisions__description">Donec lobortis at orci eu iaculis. Sed nisl nunc, aliquam lacinia luctus id, scelerisque.<br><span class="divisions__description-span">Aliquam auctor bibendum erat, in sagittis dui iaculis in.</span></p>
+                    <button class="button button--self-start">Discover our divisions<span class="material-symbols-outlined">arrow_forward</span></button>
+                </div>
+            </div>
+
+                <div class="divisions__content">
+                    <div class="divisions__image">
+                        <img class="divisions__image-img" src="assets/images/workers.jpg" alt="workers image">
+                    </div>
+                    <div class="smaller-container">
+                        <div class="divisions__items">
+                            <div class="divisions__item">
+                                <hr class="line-vertical line-vertical--brick">
+                                <p class="divisions__item__title">ProEnergy</p>
+                                <p class="divisions__item__description">Energy division</p>
+                        </div>
+
+                        <div class="divisions__item">
+                            <hr class="line-vertical line-vertical--black">
+                            <p class="divisions__item__title">ProEnergy</p>
+                            <p class="divisions__item__description">Plant & Fleet Solutions</p>
+                        </div>
+
+                        <div class="divisions__item">
+                            <hr class="line-vertical line-vertical--blue">
+                            <p class="divisions__item__title">ProEnergy</p>
+                            <p class="divisions__item__description">Water Division</p>
+                        </div>
+
+                        <div class="divisions__item">
+                            <hr class="line-vertical line-vertical--teal">
+                            <p class="divisions__item__title">ProEnergy</p>
+                            <p class="divisions__item__description">Transport Division</p>
+                        </div>
+
+                       <div class="divisions__item">
+                        <hr class="line-vertical line-vertical--silver">
+                            <p class="divisions__item__title">ProEnergy</p>
+                            <p class="divisions__item__description">Telecom Division</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <!--stats section-->
+        <section class="stats">
+            <div class="container">
+                <div class="stats__container">
+                <hr class="line line--charcoal">
+                <h2 class="stats__title">ESG Stats</h2>
+                <div class="stats__content">
+                    <div class="stats__item">
+                        <p class="stats__item-top-text stats__item-top-text--first ">Used</p>
+                        <p class="stats__item-center-text">83<span class="stats__item-percent">%</span></p>
+                        <p class="stats__item-bottom-text">renewable energy</p>
+                    </div>
+            
+                    <div class="stats__item">
+                        <p class="stats__item-top-text">Recovered</p>
+                        <p class="stats__item-center-text">77<span class="stats__item-percent">%</span></p>
+                        <p class="stats__item-bottom-text">of waste to avoid landfill</p>
+                    </div>
+        
+                    <div class="stats__item">
+                        <p class="stats__item-top-text">Recorded over</p>
+                        <p class="stats__item-center-text">15,000</p>
+                        <p class="stats__item-bottom-text">electrical vehicle miles</p>
+                    </div>
+                </div>
+                <div class="stats__action">
+                    <p class="stats__action-description">Donec lobortis at orci eu iaculis. Sed nisl nunc, aliquam lacinia luctus id, scelerisque.</p>
+                    <button class="button">Find out more<span class="material-symbols-outlined">arrow_forward</span></button>
+                </div>
+         </div>
+    </div> 
+</section>
+
+<!--slider-->
+<section class="slider">
+    <div class="container">
+        <div class="slider__container">
+        <div class="smaller-container">
+            <div class="slider__text">
+                <hr class="line line--silver">
+                <h2 class= "slider__title">What our people say</h2>
+                <p class="slider__description">As a Group we recognise that engaging and empowering our people to deliver and grow is pivotal to driving our business and achieving continued success.</p>
+                <button class="button button--white">Hear our people’s views<span class="material-symbols-outlined">arrow_forward</span></button>
+            </div>
+        </div>
+
+        <div class="smaller-container smaller-container--left">
+            <div class="slider__slide">
+                <div class="slider__item js-slider__item slider__item--show">
+            <div class="slider__content">
+                <div class="slider__quotes-up">
+                    <img src="assets/svg/quotesUp.svg" alt="quotes up" class="slider__quotes-up-img">
+                    <img src="assets/svg/quotesUp.svg" alt="quotes up" class="slider__quotes-up-img">
+                </div>
+                <p class="slider__paragraph">Sed dignissim placerat dolor id maxim. Nullam gravida bibendum ipsum, a consequat neque venenatis et.</p>
+                <div class="slider__quotes-down">
+                    <img src="assets/svg/quotesUp.svg" alt="quotes down" class="slider__quotes-up-img slider__quotes-up-img--rotate">
+                    <img src="assets/svg/quotesUp.svg" alt="quotes down" class="slider__quotes-up-img slider__quotes-up-img--rotate">
+                </div>   
+            </div>
+            <div class="slider__people">
+                <img src="assets/images/people1.png" alt="people" class="slider__people-img"> 
+                <p class="slider__people-description">Orci varius natoque<br><span class="slider__people-description-span">Magnis dis parturient montes</span></p>
+            </div>
+         </div>
+
+         <div class="slider__item js-slider__item slider__item--hide">
+            <div class="slider__content">
+                <div class="slider__quotes-up">
+                    <img src="assets/svg/quotesUp.svg" alt="quotes up" class="slider__quotes-up-img">
+                    <img src="assets/svg/quotesUp.svg" alt="quotes up" class="slider__quotes-up-img">
+                </div>
+                <p class="slider__paragraph">Vivamus venenatis ipsum at risus placerat, sit amet dapibus diam aliquam posuere cubilia curae.</p>
+                <div class="slider__quotes-down">
+                    <img src="assets/svg/quotesUp.svg" alt="quotes down" class="slider__quotes-up-img slider__quotes-up-img--rotate">
+                    <img src="assets/svg/quotesUp.svg" alt="quotes down" class="slider__quotes-up-img slider__quotes-up-img--rotate">
+                </div>   
+            </div>
+            <div class="slider__people">
+                <img src="assets/images/people2.png" alt="people" class="slider__people-img"> 
+                <p class="slider__people-description">Praesent Tempus<br><span class="slider__people-description-span">Nunc faucibus eget</span></p>
+            </div>
+         </div>
+
+         <div class="slider__item js-slider__item slider__item--hide">
+            <div class="slider__content">
+                <div class="slider__quotes-up">
+                    <img src="assets/svg/quotesUp.svg" alt="quotes up" class="slider__quotes-up-img">
+                    <img src="assets/svg/quotesUp.svg" alt="quotes up" class="slider__quotes-up-img">
+                </div>
+                <p class="slider__paragraph">Etiam mollis sit amet tellus ut accumsan. Donec sit amet lectus scelerisque, bibendum purus id, tristique felis.</p>
+                <div class="slider__quotes-down">
+                    <img src="assets/svg/quotesUp.svg" alt="quotes down" class="slider__quotes-up-img slider__quotes-up-img--rotate">
+                    <img src="assets/svg/quotesUp.svg" alt="quotes down" class="slider__quotes-up-img slider__quotes-up-img--rotate">
+                </div>   
+            </div>
+            <div class="slider__people">
+                <img src="assets/images/people3.png" alt="people" class="slider__people-img"> 
+                <p class="slider__people-description">Cras malesuada<br><span class="slider__people-description-span">Sed pulvinar ac lorem</span></p>
+            </div>
+         </div>
+
+            <div class="slider__navigation">
+                <p class="material-symbols-outlined js-button-slider-left material-symbols-outlined--slider">arrow_back</p>
+                <h3 class="slider__navigation-dot js-slider__navigation-dot slider__navigation-dot--active">&#x2022;</h3>
+                <h3 class="slider__navigation-dot js-slider__navigation-dot">&#x2022;</h3>
+                <h3 class="slider__navigation-dot js-slider__navigation-dot">&#x2022;</h3>
+                <p class="material-symbols-outlined js-button-slider-right material-symbols-outlined--slider">arrow_forward</p>
+            </div>
+        </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!--accordion-->
+<section class="accordion">
+    <hr class="line line--charcoal">
+    <div class="container">
+        <h2 class="accordion__title">Core capabilities</h2>
+    </div>
+    <div class="medium-container">
+        <h3 class="accordion__item js-accordion__item">Water</h3>
+        <div class="accordion__panel">
+            <p class="accordion__panel__description">Working collaboratively with clients to achieve shared business goals and objectives, such as end-user satisfaction, Morrison Utility Services  bring commitment, innovation, teamwork and accountability to deliver long-term partnerships.<br><span class="accordion__description-span">Proin dapibus dignissim erat et fermentum. Duis odio eros, lobortis id suscipit eget, efficitur ut dolor. Phasellus convallis semper lacus, sit amet molestie libero. Duis tempus bibendum nisi, vulputate semper erat malesuada sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus convallis semper lacus, sit amet molestie libero. Duis tempus bibendum nisi, vulputate semper erat malesuada sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span></p>
+        </div>
+        <h3 class="accordion__item js-accordion__item">Gas</h3>
+        <div class="accordion__panel ">
+            <p class="accordion__panel__description">Proin dapibus dignissim erat et fermentum. Duis odio eros, lobortis id suscipit eget, efficitur ut dolor. Phasellus convallis semper lacus, sit amet molestie libero. Duis tempus bibendum nisi, vulputate semper erat malesuada sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus convallis semper lacus, sit amet molestie libero. Duis tempus bibendum nisi, vulputate semper erat malesuada sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br><span class="accordion__description-span">Working collaboratively with clients to achieve shared business goals and objectives, such as end-user satisfaction.</span></p>
+        </div>
+
+        <h3 class="accordion__item js-accordion__item">Electricity</h3>
+        <div class="accordion__panel">
+            <p class="accordion__panel__description">Working collaboratively with clients to achieve shared business goals and objectives, such as end-user satisfaction, Morrison Utility Services  bring commitment, innovation, teamwork and accountability to deliver long-term partnerships.<br><span class="accordion__description-span">Proin dapibus dignissim erat et fermentum. Duis odio eros, lobortis id suscipit eget, efficitur ut dolor. Phasellus convallis semper lacus, sit amet molestie libero. Duis tempus bibendum nisi, vulputate semper erat malesuada sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus convallis semper lacus, sit amet molestie libero. Duis tempus bibendum nisi, vulputate semper erat malesuada sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span></p>
+        </div>
+
+        <h3 class="accordion__item js-accordion__item">Smart Metering</h3>
+        <div class="accordion__panel">
+            <p class="accordion__panel__description">Working collaboratively with clients to achieve shared business goals and objectives, such as end-user satisfaction, Morrison Utility Services  bring commitment, innovation, teamwork and accountability to deliver long-term partnerships.<br><span class="accordion__description-span">Proin dapibus dignissim erat et fermentum. Duis odio eros, lobortis id suscipit eget, efficitur ut dolor. Phasellus convallis semper lacus, sit amet molestie libero. Duis tempus bibendum nisi, vulputate semper erat malesuada sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus convallis semper lacus, sit amet molestie libero. Duis tempus bibendum nisi, vulputate semper erat malesuada sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span></p>
+        </div>
+
+        <h3 class="accordion__item js-accordion__item">Energy Projects</h3>
+        <div class="accordion__panel">
+            <p class="accordion__panel__description">Working collaboratively with clients to achieve shared business goals and objectives, such as end-user satisfaction, Morrison Utility Services  bring commitment, innovation, teamwork and accountability to deliver long-term partnerships.<br><span class="accordion__description-span">Proin dapibus dignissim erat et fermentum. Duis odio eros, lobortis id suscipit eget, efficitur ut dolor. Phasellus convallis semper lacus, sit amet molestie libero. Duis tempus bibendum nisi, vulputate semper erat malesuada sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus convallis semper lacus, sit amet molestie libero. Duis tempus bibendum nisi, vulputate semper erat malesuada sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span></p>
+        </div>
+    </div>
+</section>
+
+<!--contact-->
+<section class="contact">
+    <div class="container">
+        <div class="contact__container">
+            <hr class="line line--blue-center">
+            <h2 class="contact__title">Contact us</h2>
+            <form class="contact__form">
+                <div class="contact__form-group">
+                    <label class="contact__form-label contact__form-label--left" for="first-name">Your first name*</label>
+                    <input class="contact__form-input contact__form-input--left" type="text" id="first-name" name="first-name" placeholder="Enter your first name..." required>
+                </div>
+
+                <div class="contact__form-group">
+                    <label class="contact__form-label  contact__form-label--right" for="last-name">Your last name*</label>
+                    <input class="contact__form-input contact__form-input--right" type="text" id="last-name" name="last-name" placeholder="Enter your last name..." required>
+                </div>
+
+                <div class="contact__form-group">
+                    <label class="contact__form-label contact__form-label--left" for="email">Your email address*</label>
+                    <input class="contact__form-input contact__form-input--left" type="email" id="email" name="email" placeholder="Enter your email address..." required>
+                </div>
+
+                <div class="contact__form-group">
+                    <label class="contact__form-label  contact__form-label--right" for="subject">Your subject*</label>
+                    <input class="contact__form-input contact__form-input--right" type="text" id="subject" name="subject" placeholder="Enter your Subject..." required>
+                </div>
+
+                <div class="contact__form-group contact__form-group--full-width">
+                    <label class="contact__form-label" for="message">Your message*</label>
+                    <textarea class="contact__form-textarea" maxlength="1000" id="message" name="message" rows="8" placeholder="Enter your message..." required></textarea>
+                </div>
+                
+                <p class="contact__description">*Required fields</p>
+                <button class="button button--end">Submit<span class="material-symbols-outlined">arrow_forward</span></button>
+            </form>
+        </div>
+    </div>
+</section>
+
+    </main>
+   <!--footer-->
+   <footer class="footer">
+    <div class="container">
+        <div class="footer__container">
+            <div class="footer__logo">
+                <img src="assets/svg/logo.svg" alt="logo" class="footer__logo-img">
+            </div>
+            <div class="footer__icons">
+                <i class="zmdi zmdi-twitter"></i>
+                <i class="zmdi zmdi-linkedin"></i>
+                <i class="zmdi zmdi-facebook"></i>
+            </div>   
+            
+            <div class="footer__links">
+                <a href="#" class="footer__link">Cookies</a>
+                <a href="#" class="footer__link">Sitemap</a>
+                <a href="#" class="footer__link">Privacy policy</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer__text">
+        <div class="container">
+        <p class="footer__description">2022 © ProEnergy. Registered in Serbia. Registered Office: Novosadskog sajma 2, Novi Sad.</p>
+        </div>
+    </div>
+   </footer>
+
+    <script src="../dist/js/script.js"></script>
+
+</body>
+</html>

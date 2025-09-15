@@ -1,0 +1,269 @@
+@import '/src/scss/base/variables';
+@import '/src/scss/base/mixins';
+@import '/src/scss/base/layout';
+@import '/src/scss/components/lines';
+
+.slider {
+    padding: 70px 0px 70px 0px;
+    background-color: $brick;
+
+    @include for-tablet {
+        padding: 40px 0px 40px 0px;
+    }
+}
+
+.slider__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    @include for-tablet {
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+.slider__text {
+    padding: 0px 40px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    @include for-tablet {
+        padding: 0;
+        gap: 20px;
+    }
+}
+
+.slider__title{
+    font-family: $font-family;
+    font-size: 46px;
+    font-weight: $font-weight-regular;
+    line-height: 58px;
+    text-align: left;
+    margin: 0;
+    color: $white;
+
+    @include for-tablet {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    @include for-mobile {
+        font-size: 30px;
+        line-height: 38px;
+    }
+}
+
+.slider__description {
+    font-family: $font-family;
+    font-size: 18px;
+    font-weight: $font-weight-medium;
+    line-height: 28px;
+    text-align: left;
+    color: $white;
+    margin: 0;
+
+    @include for-mobile {
+        font-size: 16px;
+        line-height: 26px;
+    }
+}
+
+.slider__slide {
+    background-color: $white;
+    padding: 30px;
+    box-shadow: 0px 5px 25px 0px #00000059;
+
+    @include for-tablet {
+        padding: 40px 50px 40px 50px;
+    }
+
+    @include for-mobile {
+        padding: 30px;
+    }
+}
+
+.slider__item--show {
+    display: block;
+}
+
+.slider__item--hide {
+    display: none;
+}
+
+.slider__content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    @include for-mobile {
+        gap: 10px;
+    }
+}
+
+.slider__quotes-up {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    
+ }
+
+ .slider__quotes-up-img {
+    height: 49.35px;
+
+    @include for-mobile {
+        height: 40px;
+        width: 30px;
+    }
+ }
+
+ .slider__quotes-up-img--rotate {
+    transform: rotate(3.142rad);
+ }
+
+ .slider__quotes-down {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    justify-content: end;
+ }
+
+.slider__paragraph {
+    font-family: $font-family;
+    font-size: 28px;
+    font-weight: $font-weight-medium;
+    line-height: 42px;
+    text-align: left;
+    color: $charcoal;
+    margin: 0;
+
+    @include for-tablet {
+        font-size: 26px;
+        line-height: 40px;
+    }
+
+    @include for-mobile {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+.slider__people {
+    padding: 20px 0px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: fit-content;
+
+    @include for-mobile {
+        padding: 16px 0px 0px 0px;
+    }
+}
+
+.slider__people-img {
+    width: 87px;
+    height: 87px;
+    top: 20px;
+    gap: 0px;
+    border-radius: 50%;
+
+    @include for-mobile {
+        width: 80px;
+        height: 80px;
+        top: 0;
+    }
+}
+
+.slider__people-description {
+    font-family: $font-family;
+    font-size: 16px;
+    font-weight: $font-weight-medium;
+    line-height: 27.07px;
+    letter-spacing: 0.02em;
+    text-align: left;
+
+    @include for-mobile {
+        line-height: 20px;
+        margin: 0;
+    }
+}
+
+.slider__people-description-span {
+    font-size: 16px;
+    font-weight: $font-weight-regular;
+    line-height: 27.07px;
+    letter-spacing: 0.02em;
+    text-align: left;
+
+    @include for-mobile {
+        line-height: 20px;
+    }
+}
+
+.slider__navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px 0px 0px 0px;
+    gap: 13px;
+    align-items: center;  
+
+    @include for-tablet {
+        justify-content: left;
+    }
+
+    @include for-mobile {
+        justify-content: center;
+        gap: 24px;
+
+    }
+}
+
+.material-symbols-outlined--slider {
+    font-size: 60px;
+    font-weight: $font-weight-regular;
+    line-height: 60px;
+    text-align: left;
+    color: $teal;
+    margin: 0;
+    cursor: pointer;
+    transition: opacity 300ms ease-out;
+
+    @include for-mobile {
+        font-size: 40px;
+        line-height: 40px;
+    }
+}
+
+.material-symbols-outlined--slider--fade-out {
+    opacity: 0;
+}
+
+.material-symbols-outlined--slider-last {
+    font-size: 60px;
+    font-weight: $font-weight-regular;
+    line-height: 60px;
+    text-align: left;
+    color: $teal;
+    margin: 0;
+    opacity: 50%;
+
+    @include for-mobile {
+        font-size: 40px;
+        line-height: 40px;
+    }
+}
+
+.slider__navigation-dot {
+   font-size: 37.23px;
+   line-height: 13px;
+   opacity: 50%;
+   color: $red;
+   margin: 0;
+}
+
+.slider__navigation-dot--active {
+    opacity: 1;
+    line-height: 19px;
+    font-size: 54.4px;
+}

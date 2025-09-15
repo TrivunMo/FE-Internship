@@ -1,0 +1,121 @@
+@import '/src/scss/base/variables';
+@import '/src/scss/base/mixins';
+@import '/src/scss/base/layout';
+@import '/src/scss/components/lines';
+
+.accordion {
+    padding: 70px 0px 70px 0px;
+    gap: 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+
+    @include for-tablet {
+        padding: 40px 0px 40px 0px;
+        gap: 20px;
+    }
+}
+
+.accordion__title {
+    font-family: $font-family;
+    font-size: 46px;
+    font-weight: $font-weight-regular;
+    line-height: 58px;
+    text-align: center;
+    margin: 0;
+
+    @include for-tablet {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    @include for-mobile {
+        font-size: 30px;
+        line-height: 38px;
+    }
+}
+
+.accordion__item {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px 10px 20px;
+    border-bottom: 1px solid $gray;
+    border-top: 1px solid $gray;
+    margin: 0;
+
+    font-family: $font-family;
+    font-size: 20px;
+    font-weight: $font-weight-medium;
+    line-height: 32px;
+    text-align: left;
+
+    @include for-mobile {
+        font-size: 18px;
+    }
+}
+
+.accordion__item::after {
+    content: '+';
+    color: $teal;
+    position: absolute;
+    right: 0;
+    font-size: 30px;
+    margin-right: 20px;
+    font-weight: $font-weight-regular;
+  }
+
+  .accordion__item.active::after {
+    content: '-';
+    font-size: 50px;
+    font-weight: $font-weight-light;
+  }
+
+.accordion__item:first-of-type {
+    border-top: 2px solid $gray;
+}
+
+.accordion__item:last-of-type {
+    border-bottom: 2px solid $gray;
+}
+
+.accordion__item:active {
+    display: block;
+}
+
+.accordion__panel {
+    padding: 20px;
+    background-color: $silver;
+    display: none;
+    border-bottom: 1px solid $gray;
+    border-top: 1px solid $gray;
+
+
+    @include for-mobile {
+        padding: 16px 10px 16px 10px;
+    }
+}
+
+.accordion__panel--active {
+    display: block;
+}
+.accordion__panel__description {
+    font-family: $font-family;
+    font-size: 16px;
+    font-weight: $font-weight-regular;
+    line-height: 26px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    margin: 0;
+    color: $charcoal;
+}
+
+.accordion__description-span {
+    margin-top: 10px;
+    display: block;
+}
+.accordion__panel:last-of-type {
+    border-bottom: 2px solid $gray;
+    border-top: none;
+}
